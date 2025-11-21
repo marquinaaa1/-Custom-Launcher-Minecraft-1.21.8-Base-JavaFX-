@@ -1,4 +1,4 @@
-# -ustom-Launcher-Minecraft-1.21.8-Base-
+# Свой кастомный лаунчер для Minecraft 1.21.8
 База своего кастомного лаунчера Minecraft 1.21.8
 
 Конфиг для загрузкий файлов игры находятся resources - config.json.
