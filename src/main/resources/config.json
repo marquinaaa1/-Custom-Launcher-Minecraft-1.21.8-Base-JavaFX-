@@ -1,0 +1,25 @@
+{
+  "minecraft_version": "1.21.8",
+  "allowed_mods": [
+    "fabric-api-0.136.1+1.21.8.jar"
+  ],
+  "natives_server_url": "",
+  "fabric_installer_url": "",
+  "mod_download_url": "",
+  "minecraft_assets_base_url": "https://resources.download.minecraft.net/",
+  "version_manifest_url": "https://piston-meta.mojang.com/mc/game/version_manifest_v2.json",
+  "game_dir": "C:\\Users\\AppData\\Roaming\\.countermine",
+  "jvm_args": [
+    "-Xmx2G",
+    "-Xms1G",
+    "-Djdk.tls.client.protocols=TLSv1.2,TLSv1.3"
+  ],
+  "needed_natives_windows_64": [
+    "lwjgl.dll",
+    "lwjgl_opengl.dll",
+    "lwjgl_stb.dll",
+    "glfw.dll",
+    "jemalloc.dll",
+    "OpenAL.dll"
+  ]
+}

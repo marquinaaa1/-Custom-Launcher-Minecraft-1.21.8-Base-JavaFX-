@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter-Mine 2 Launcher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <button class="sidebar-close-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M3 12H21M3 6H21M3 18H21" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+        <nav class="sidebar-nav">
+            <!-- Здесь будут элементы меню -->
+        </nav>
+        <div class="sidebar-footer">
+            <button class="shop-btn" onclick="openShop()">
+                <img src="../img/shop.png" alt="Shop">
+            </button>
+        </div>
+    </aside>
+    <div class="launcher">
+        <!-- Titlebar -->
+        <div class="titlebar">
+            <div class="titlebar-left">
+                <button class="menu-btn" onclick="toggleMenu()">
+                    <img src="../img/othermenu.png" alt="Menu">
+                </button>
+                <div class="logo">
+                    <img src="../img/cmico.png" alt="CM2">
+                    <span>COUNTER-MINE 2</span>
+                </div>
+            </div>
+            <div class="titlebar-right">
+                <div class="user-info">
+                    <img src="../img/headacc.png" alt="avatar" class="avatar">
+                    <span class="username" id="displayUsername">marquina</span>
+                </div>
+                <button class="window-btn" onclick="minimize()">
+                    <svg width="12" height="2" viewBox="0 0 12 2" fill="white">
+                        <rect width="12" height="2"/>
+                    </svg>
+                </button>
+                <button class="window-btn close-btn" onclick="closeLauncher()">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="white">
+                        <path d="M1 1L11 11M11 1L1 11" stroke="white" stroke-width="2"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <button class="btn-play" onclick="launchGame()">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="white">
+                        <path d="M5 3L17 10L5 17V3Z"/>
+                    </svg>
+                    Играть
+                </button>
+                <button class="btn-settings" onclick="openSettings()">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="white">
+                        <path d="M10 6C7.79 6 6 7.79 6 10C6 12.21 7.79 14 10 14C12.21 14 14 12.21 14 10C14 7.79 12.21 6 10 6ZM10 12C8.9 12 8 11.1 8 10C8 8.9 8.9 8 10 8C11.1 8 12 8.9 12 10C12 11.1 11.1 12 10 12Z"/>
+                        <path d="M17.14 10.94C17.18 10.64 17.2 10.33 17.2 10C17.2 9.68 17.18 9.36 17.13 9.06L19.16 7.48C19.34 7.34 19.39 7.07 19.28 6.87L17.36 3.55C17.24 3.33 16.99 3.26 16.77 3.33L14.38 4.29C13.88 3.91 13.35 3.59 12.76 3.35L12.4 0.81C12.36 0.57 12.16 0.4 11.92 0.4H8.08C7.84 0.4 7.65 0.57 7.61 0.81L7.25 3.35C6.66 3.59 6.12 3.92 5.63 4.29L3.24 3.33C3.02 3.25 2.77 3.33 2.65 3.55L0.74 6.87C0.62 7.08 0.66 7.34 0.86 7.48L2.89 9.06C2.84 9.36 2.8 9.69 2.8 10C2.8 10.31 2.82 10.64 2.87 10.94L0.84 12.52C0.66 12.66 0.61 12.93 0.72 13.13L2.64 16.45C2.76 16.67 3.01 16.74 3.23 16.67L5.62 15.71C6.12 16.09 6.65 16.41 7.24 16.65L7.6 19.19C7.65 19.43 7.84 19.6 8.08 19.6H11.92C12.16 19.6 12.36 19.43 12.39 19.19L12.75 16.65C13.34 16.41 13.88 16.09 14.37 15.71L16.76 16.67C16.98 16.75 17.23 16.67 17.35 16.45L19.27 13.13C19.39 12.91 19.34 12.66 19.15 12.52L17.14 10.94Z"/>
+                    </svg>
+                    Настройки
+                </button>
+            </div>
+
+            <!-- Description -->
+            <div class="description">
+                <p>Различные режимы на любой вкус —<br>
+                классические матчи, дуэли, рейтинговые матчи.<br>
+                Играй на нашем сервере CM2, повышай<br>
+                скилл и сражайся вместе с друзьями!</p>
+            </div>
+
+            <!-- News Section -->
+            <div class="news-section">
+                <div class="news-card">
+                    <h3 class="news-title">НОВОСТИ</h3>
+                    <h4 class="news-subtitle">Новая карта «Overpass»</h4>
+                    <p class="news-text">Сражайтесь на новой карте.</p>
+                </div>
+
+                <div class="news-card">
+                    <h3 class="news-title">ОБНОВЛЕНИЕ</h3>
+                    <h4 class="news-subtitle">Выпустили свой лаунчер, и новый Анти-Чит. Это поможет устранить читеров.</h4>
+                </div>
+            </div>
+
+            <!-- Status Message -->
+            <div id="status" class="status"></div>
+        </div>
+    </div>
+
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <h1>COUNTER-MINE 2</h1>
+            <h2>Загрузка</h2>
+            <div class="progress-bar-container">
+                <div class="progress-bar-fill" id="progressBarFill"></div>
+                <span class="progress-bar-percentage" id="progressBarPercentage">0%</span>
+            </div>
+            <p id="loadingMessage">Загрузка файлов...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
